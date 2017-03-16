@@ -18,6 +18,8 @@ public class Cerveja {
     @Size(min = 1, max = 50)
     private String nome;
 
+    private String teste;
+
     public String getSku() {
         return sku;
     }

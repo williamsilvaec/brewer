@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cervejas</title>
+</head>
+<body>
+    <h1>Olá, Spring MVC e Thymeleaf configurados</h1>
+    <br>
+    <form method="POST">
+        <span th:text="${mensagem}"></span>
+        <br><br>
+
+        <label for="sku">SKU</label>
+        <input type="text" id="sku" name="sku">
+        <br><br>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome">
+        <br><br>
+
+        <label for="descricao">Descrição</label>
+        <textarea rows="3" cols="30" id="descricao" name="descricao"></textarea>
+        <br><br>
+
+        <input type="submit" value="Salvar">
+    </form>
+</body>
+</html>
