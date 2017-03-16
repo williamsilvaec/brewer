@@ -43,4 +43,12 @@ public class Cerveja {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public String getTeste() {
+        return teste;
+    }
+
+    public void setTeste(String teste) {
+        this.teste = teste;
+    }
 }
