@@ -7,21 +7,26 @@
 <body>
     <h1>Olá, Spring MVC e Thymeleaf configurados</h1>
     <br>
-    <form method="POST">
-        <span th:text="${mensagem}"></span>
-        <br><br>
+
+    <div th:each="erro : ${#fields.detailedErrors('${cerveja.*}')}">
+        <span th:text="${erro.message}"></span>
+    </div>
+
+    <form method="POST" th:object="${cerveja}">
+        <span th:text="${mensagem}">Erro!</span>
+        <br>
 
         <label for="sku">SKU</label>
-        <input type="text" id="sku" name="sku">
-        <br><br>
+        <input type="text" id="sku" th:field="*{sku}">
+        <br>
 
         <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome">
-        <br><br>
+        <input type="text" id="nome" th:field="*{nome}">
+        <br>
 
         <label for="descricao">Descrição</label>
-        <textarea rows="3" cols="30" id="descricao" name="descricao"></textarea>
-        <br><br>
+        <textarea rows="3" cols="30" id="descricao" th:field="*{descricao}"></textarea>
+        <br>
 
         <input type="submit" value="Salvar">
     </form>
