@@ -19,7 +19,7 @@ public class CervejasController {
     @RequestMapping("/cervejas/novo")
     public String novo(Cerveja cerveja) {
 
-        return "cervejas/CadastroCerveja";
+        return "cerveja/CadastroCerveja";
     }
 
     @RequestMapping(value = "/cervejas/novo", method = RequestMethod.POST)
@@ -33,11 +33,5 @@ public class CervejasController {
         System.out.println("sku >>> "+ cerveja.getSku());
         return "redirect:/cervejas/novo";
     }
-
-    @RequestMapping("/cervejas/cadastro")
-    public String cadastro() {
-        return "/cervejas/cadastro-produto";
-    }
-
 
 }

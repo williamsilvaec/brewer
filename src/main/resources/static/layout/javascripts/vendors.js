@@ -4900,7 +4900,7 @@ jQuery.event = {
 	special: {
 		load: {
 
-			// Prevent triggered image.load events from bubbling to window.load
+			// Prevent triggered images.load events from bubbling to window.load
 			noBubble: true
 		},
 		focus: {
@@ -13295,7 +13295,7 @@ var setParameters = function setParameters(params) {
   }
 
   /*
-   * Custom image
+   * Custom images
    */
   if (params.imageUrl) {
     var $customIcon = modal.querySelector('.sa-icon.sa-custom');
