@@ -10,9 +10,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 
-/**
- * Created by william on 16/03/2017.
- */
+
 @Controller
 public class CervejasController {
 
